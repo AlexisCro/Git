@@ -6,6 +6,8 @@ Quelques notes d'explications sur le fonctionnement de GIT.
 - Bases
 
   - [3 commandes de base](./base/Base.md)
+  - [Les branches](./base/Branches.md)
+  - [git pull](./base/Pull.md)
 
 - Intermédiaire
 

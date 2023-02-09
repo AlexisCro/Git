@@ -17,7 +17,7 @@ Je listerais seulement celle que j'utilise le plus pour le moment.
 La comande git add va permettre d'instancier les changements apportés à des fichiers mais aussi de suivre (track) des fichiers qui viennent d'être ajoutés. 
 	
 Imaginons que je vienne de modifier un ou des fichiers dans mon projet sur une branche. 
-Avec un git status j'aurais alors la liste des fichiers modifiés. 
+Avec un ```git status``` j'aurais alors la liste des fichiers modifiés. 
 	
 Ceux-ci apparaîtront en rouge pour signaler qu'ils sont unstage. 
 Plusieurs solutions s'offrent à moi : 
@@ -28,9 +28,10 @@ Stage le fichier sélectionné.
 		git add <directory>
 Stage tout les fichiers dans le dossier
 		 
-		git add -p 
+		git add -p
 Ouvre une session de stage intéractif et permet de répondre avec des options pour dire si on souhaite stage des parties de fichiers. 
-		
+
+[photo git add -p](../assets/images/base/ga-p.png)
 		
 Git add -p est vraiment pratique afin de pouvoir choisir précisément quelle partie de fichiers doit être stage ou non et de plus instaure une première relecture de vos changements. 
 	
@@ -53,3 +54,18 @@ Commande : ```git push```
 Le push, comme son nom l'indique, permet de pousser votre travail local en distant. 
 Pour cela il suffit de faire un git push en se trouvant sur la branche que vous souhaitez push. 
 Votre travail est à présent à jour avec votre dépôt distant. 
+
+### Status, une commande bien utile
+
+Il est important de savoir quel est l'état de vos fichiers pour savoir si ceux-ci sont stage ou non. 
+Comme évoqué un peu plus haut pour cela on utilise la commande ```git status``` cela va nous permettre de savoir 
+si on track ou non nos fichiers et lesquels vont être commit. 
+
+[photo git status](../assets/images/base/status.png)
+
+Pourquoi c'est important ? 
+
+Lorsque vous travaillerez en équipe il se peut que la stratégie de votre groupe de travail ou entreprise soit de créer des branches 
+pour chaque changements, fix de bugs, etc. Dans ce cas il est fort probable que vous deviez limiter les changements que vous devriez commits. 
+Afin d'éviter des situations complexes, il peut être bon de prendre pour habitude de vérifier le statut de vos fichiers avant de stage ```git add```
+et avant de commit ```git commit```

@@ -47,3 +47,18 @@ git checkout "nom-de-ma-branche"
 ```
 
 Nous savons donc maintenant comment créer une branche, lister nos branches et se déplacer dessus. 
+
+#### Note
+
+Git ne vous laissera pas changer de branche si vous n'avez pas commit vos changements dessus ou bien [stash](../intermédiaire/Stash.md) ces derniers. 
+
+## Suppression des branches
+
+Une fois que votre travail sera terminé sur votre branche et que vous n'en aurez plus besoin soit parce que celle-ci est obsolète
+soit parce que la branche a été merge avec votre branche main vous aurez surement besoin de la supprimer. 
+
+Pour cela la commande est la suivante :
+
+```
+git branch -d "nom-de-ma-branche"
+```
