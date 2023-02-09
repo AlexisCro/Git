@@ -9,6 +9,8 @@ Il faut s'imager un peu git comme un arbre qui pousse dans le temps.
 
 Nous avons le tronc de l'arbre qui sera la branche principale et évidemment comme un arbre nous aurons différentes branches. 
 
+![branches_git](../assets/images/branches/branche_exemple.png)
+
 Il peut être pertinent de créer des branches pour chaque sujet dans votre projet tel que la correction de bugs, la création de nouvelles feature, etc. 
 En effet voyons un peu l'intérêt des branches. 
 
