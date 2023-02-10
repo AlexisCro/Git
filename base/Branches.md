@@ -33,6 +33,8 @@ git branche "nom-de-ma-branche"
 
 On évite les espaces entre les mots, ici j'ai mis des "-" mais on peut bien mettre "_" ou d'autres caractères.
 
+![screenshot error branch name](../assets/images/branches/erreur-nom-branch.png)
+
 Evidemment pour se rappeler de chaque branches que nous avons créées on peut faire la commande suivante : 
 
 ```
@@ -41,10 +43,13 @@ git branch
 
 Cela listera toutes les branches locales et marquera la branche sur laquelle nous sommes. 
 
+![screenshot list branch](../assets/images/branches/list-branch.png)
+
 Pour se déplacer d'une branche à une autre on peut alors faire la commande suivante : 
 ```
 git checkout "nom-de-ma-branche"
 ```
+![screenshot checkout branch](../assets/images/branches/change-branch.png)
 
 Nous savons donc maintenant comment créer une branche, lister nos branches et se déplacer dessus. 
 
@@ -62,3 +67,5 @@ Pour cela la commande est la suivante :
 ```
 git branch -d "nom-de-ma-branche"
 ```
+
+![screenshot delete branch](../assets/images/branches/delete-branch.png)
