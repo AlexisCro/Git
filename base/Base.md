@@ -31,7 +31,7 @@ Stage tout les fichiers dans le dossier
 		git add -p
 Ouvre une session de stage intéractif et permet de répondre avec des options pour dire si on souhaite stage des parties de fichiers. 
 
-[photo git add -p](../assets/images/base/ga-p.png)
+![photo git add -p](../assets/images/base/ga-p.png)
 		
 Git add -p est vraiment pratique afin de pouvoir choisir précisément quelle partie de fichiers doit être stage ou non et de plus instaure une première relecture de vos changements. 
 	
@@ -61,7 +61,7 @@ Il est important de savoir quel est l'état de vos fichiers pour savoir si ceux-
 Comme évoqué un peu plus haut pour cela on utilise la commande ```git status``` cela va nous permettre de savoir 
 si on track ou non nos fichiers et lesquels vont être commit. 
 
-[photo git status](../assets/images/base/status.png)
+![photo git status](../assets/images/base/status.png)
 
 Pourquoi c'est important ? 
 
