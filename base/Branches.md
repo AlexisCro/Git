@@ -33,6 +33,8 @@ git branche "nom-de-ma-branche"
 
 On évite les espaces entre les mots, ici j'ai mis des "-" mais on peut bien mettre "_" ou d'autres caractères.
 
+![screenshot error branch name](../assets/images/branches/erreur-nom-branch.png)
+
 Evidemment pour se rappeler de chaque branches que nous avons créées on peut faire la commande suivante : 
 
 ```
@@ -41,16 +43,39 @@ git branch
 
 Cela listera toutes les branches locales et marquera la branche sur laquelle nous sommes. 
 
+![screenshot list branch](../assets/images/branches/list-branch.png)
+
 Pour se déplacer d'une branche à une autre on peut alors faire la commande suivante : 
 ```
 git checkout "nom-de-ma-branche"
 ```
+![screenshot checkout branch](../assets/images/branches/change-branch.png)
 
 Nous savons donc maintenant comment créer une branche, lister nos branches et se déplacer dessus. 
 
 #### Note
 
-Git ne vous laissera pas changer de branche si vous n'avez pas commit vos changements dessus ou bien [stash](../intermédiaire/Stash.md) ces derniers. 
+Git ne vous laissera pas changer de branche si vous n'avez pas commit vos changements dessus ou bien [stash](../intermédiaire/Stash.md) ces derniers.
+
+## Renomer vos branches
+
+Il se peut que vous deviez suivre une convention de nommage de vos branches dans vos entreprises ou groupes de travail. Il se peut également qu'au début vous n'en ayez pas l'habitude et que vous vous trompiez dans le nommage de la branche. Plutôt que de vouloir supprimer votre branche pour la recréer en a nommant correctement vous pouvez très bien renommer votre branche. 
+
+### Renomer une branche locale
+
+Rien de plus simple il vous suffit de suivre la syntaxe suivante en vous plaçant sur la branche principale avant cela via ```git checkout <nom de votre branche principale>```: 
+
+```
+git branch -m <old name> <new name>
+```
+
+### Renomer une branche distante
+
+Tout d'abord assurer vous que votre branche locale soit nommée correctement. Puis vous pouvez entrer la commande suivante : 
+
+```
+git push origin <old name> <new name>
+```
 
 ## Suppression des branches
 
@@ -62,3 +87,5 @@ Pour cela la commande est la suivante :
 ```
 git branch -d "nom-de-ma-branche"
 ```
+
+![screenshot delete branch](../assets/images/branches/delete-branch.png)
