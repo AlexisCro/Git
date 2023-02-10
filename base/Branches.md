@@ -55,7 +55,27 @@ Nous savons donc maintenant comment créer une branche, lister nos branches et s
 
 #### Note
 
-Git ne vous laissera pas changer de branche si vous n'avez pas commit vos changements dessus ou bien [stash](../intermédiaire/Stash.md) ces derniers. 
+Git ne vous laissera pas changer de branche si vous n'avez pas commit vos changements dessus ou bien [stash](../intermédiaire/Stash.md) ces derniers.
+
+## Renomer vos branches
+
+Il se peut que vous deviez suivre une convention de nommage de vos branches dans vos entreprises ou groupes de travail. Il se peut également qu'au début vous n'en ayez pas l'habitude et que vous vous trompiez dans le nommage de la branche. Plutôt que de vouloir supprimer votre branche pour la recréer en a nommant correctement vous pouvez très bien renommer votre branche. 
+
+### Renomer une branche locale
+
+Rien de plus simple il vous suffit de suivre la syntaxe suivante en vous plaçant sur la branche principale avant cela via ```git checkout <nom de votre branche principale>```: 
+
+```
+git branch -m <old name> <new name>
+```
+
+### Renomer une branche distante
+
+Tout d'abord assurer vous que votre branche locale soit nommée correctement. Puis vous pouvez entrer la commande suivante : 
+
+```
+git push origin <old name> <new name>
+```
 
 ## Suppression des branches
 
