@@ -1,4 +1,6 @@
-## Git, c'est quoi ?
+# Git, c'est quoi ?
+
+## Versioning
 
 Git est un outil de versioning permettant de jouer avec le temps dans un projet de développement. 
 Il permet également, en combinaison avec d'autres outils tels que gitlab ou github, de publier son code sur des dépôts distants pour les stocker sur des serveurs. 
@@ -7,9 +9,12 @@ Lorsque l'on travaille sur un projet de développement il est très utile d'util
 	
 Le principe de base est assez simple et se déroule en 3 étapes. 
 Après modifications des fichiers la première étape est de valider les modifications (stage) puis nous allons commit ces changements et enfin les push sur le dépôt distant. 
+
+## Contexte
+Dans ces petits articles simples nous allons donc tenter de découvrir Git et de vous faire comprendre quelques commandes de bases. Nous serons dans un contexte où nous utilisons Git toujours avec des dépôts distants stockés sur Github. Car la plupart du temps et l'intérêt premier de Git est de travailler en équipe. 
 	
-## 3 commandes de base
-### Stage : 
+# 3 commandes de base
+## Stage : 
 Commande : ```git add```
 Il existe plusieurs options à la commande git add et elle ne seront pas toutes énumérées ici.
 Je listerais seulement celle que j'utilise le plus pour le moment. 
@@ -35,7 +40,7 @@ Ouvre une session de stage intéractif et permet de répondre avec des options p
 		
 Git add -p est vraiment pratique afin de pouvoir choisir précisément quelle partie de fichiers doit être stage ou non et de plus instaure une première relecture de vos changements. 
 	
-### Commit : 
+## Commit : 
 Commande : ```git commit```
 	
 Le commit permet en quelque sorte d'encapsuler vos changements afin de potentiellement revenir dessus pour corriger une erreur, pour repartir sur ces modifications, etc. 
@@ -48,14 +53,14 @@ De plus il est conseillé de donné un titre ou un commentaire afin de dire de f
 Votre travail est maintenant enregistrer en quelque sorte dans une capsule. Mais seulement sur votre ordinateur. 
 Pour partager vos changements vous devrez alors pousser (push) votre travaille sur le dépôt distant. 
 	
-### Push : 
+## Push : 
 Commande : ```git push```
 	
 Le push, comme son nom l'indique, permet de pousser votre travail local en distant. 
 Pour cela il suffit de faire un git push en se trouvant sur la branche que vous souhaitez push. 
 Votre travail est à présent à jour avec votre dépôt distant. 
 
-### Status, une commande bien utile
+## Status, une commande bien utile
 
 Il est important de savoir quel est l'état de vos fichiers pour savoir si ceux-ci sont stage ou non. 
 Comme évoqué un peu plus haut pour cela on utilise la commande ```git status``` cela va nous permettre de savoir 

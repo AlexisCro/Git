@@ -17,3 +17,7 @@ puis git fait un ```git merge``` pour fusionner les commits que nous venons de r
 Voici un aperçu de ce que cette commande peut générer :
 
 ![screenshot git pull](../assets/images/pull/example-pull.png)
+
+Nous avons donc un message expliquant ce que Git a fait lors de cette commande. 
+
+Ici Git détecte un fichier modifié et différent de notre dépôt local, il dit à quel dépôt distant il se réfère et nous avons donc le fichier modifié ( ici avec 9 ajouts ).
