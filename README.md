@@ -14,7 +14,7 @@ Quelques notes d'explications sur le fonctionnement de GIT.
   - [Stash](./intermédiaire/Stash.md)
   - [Merge/Rebase](./intermédiaire/Merge-rebase.md)
 
-## Sources et tutos
+## :books: Sources et tutos
 
 - Sources
   - [Git Atlassian](https://www.atlassian.com/fr/git/tutorials/what-is-version-control)
@@ -22,3 +22,8 @@ Quelques notes d'explications sur le fonctionnement de GIT.
 
 - Tutos
   - [Git intéractif](https://learngitbranching.js.org/?locale=fr_FR)
+
+## :wrench: Outils
+- Git
+- Github
+- Github desktop
